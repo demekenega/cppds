@@ -14,7 +14,7 @@
             grows (as <c>push</c> operations occur), new items will be added on the end
             of the array. <c>pop</c> operations will manipulate that same end.</p>
         
-        <exercise ><TabNode tabname="C++" tabnode_options="{'subchapter': 'ImplementingaStackCpp', 'chapter': 'LinearBasic', 'basecourse': 'cppds', 'optional': '', 'optclass': '', 'tabname': 'C++'}">
+        <TabNode tabname="C++" tabnode_options="{'subchapter': 'ImplementingaStackCpp', 'chapter': 'LinearBasic', 'basecourse': 'cppds', 'optional': '', 'optclass': '', 'tabname': 'C++'}">
 
     <program xml:id="stack_1ac_cpp" interactive="activecode" language="cpp">
         <input>
@@ -95,14 +95,14 @@ def main():
 main()
         </input>
     </program>
-            </TabNode></exercise>
-        <note>
-            <title>Self Check</title>
+            </TabNode>
 
+<reading-questions xml:id="rq-stack-implementation">
+                <title>Reading Questions</title>
     <exercise label="stack_1">
         <statement>
 
-            <p>Q-3: Given the following sequence of stack operations, what is the top item on the stack when the sequence is complete?</p>
+            <p>Given the following sequence of stack operations, what is the top item on the stack when the sequence is complete?</p>
             <program language="cpp"><input>
 stack&lt;int&gt; m;
 m.push(5);
@@ -157,7 +157,7 @@ cout &lt;&lt; m.top();
     <exercise label="stack_2">
         <statement>
 
-            <p>Q-4: Given the following sequence of stack operations, what is the top item on the stack when the sequence is complete?</p>
+            <p>Given the following sequence of stack operations, what is the top item on the stack when the sequence is complete?</p>
             <program language="cpp"><input>
 stack&lt;int&gt; m;
 m.push(37);
@@ -210,6 +210,6 @@ while (!m.empty()){
 </choices>
 
     </exercise>
-        </note>
+</reading-questions>  
     </section>
 

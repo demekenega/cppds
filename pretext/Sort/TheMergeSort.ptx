@@ -25,7 +25,7 @@
             halves. It is important to note that the vector may not have an even
             number of items. That does not matter, as the lengths will differ by at
             most one.</p>
-        <exercise ><TabNode tabname="C++" tabnode_options="{'subchapter': 'TheMergeSort', 'chapter': 'Sort', 'basecourse': 'cppds', 'optional': '', 'optclass': '', 'tabname': 'C++'}">
+        <TabNode tabname="C++" tabnode_options="{'subchapter': 'TheMergeSort', 'chapter': 'Sort', 'basecourse': 'cppds', 'optional': '', 'optclass': '', 'tabname': 'C++'}">
 
     <program xml:id="lst_mergeSort_cpp" interactive="activecode" language="cpp">
         <input>
@@ -142,7 +142,7 @@ def main():
 main()
         </input>
     </program>
-            </TabNode></exercise>
+            </TabNode>
         <p>Once the <c>mergeSort</c> function is invoked on the left half and the
             right half (lines 8&#8211;9), it is assumed they are sorted. The rest of the
             function (lines&#160;11&#8211;31) is responsible for merging the two smaller sorted
@@ -280,13 +280,12 @@ merge_anim_init = function(divid)
             operations. This additional space can be a critical factor if the vector
             is large and can make this sort problematic when working on large data
             sets. In the case with using lists in python, the space complexity is <math>O(log n)</math>.</p>
-        <note>
-            <title>Self Check</title>
+<reading-questions xml:id="rq-merge-sort">
 
     <exercise label="question_sort_5">
         <statement>
 
-            <p>Q-5: Given the following list of numbers: [21, 1, 26, 45, 29, 28, 2, 9, 16, 49, 39, 27, 43, 34, 46, 40] which answer illustrates the list to be sorted after 3 recursive calls to mergesort?</p>
+            <p>Given the following list of numbers: [21, 1, 26, 45, 29, 28, 2, 9, 16, 49, 39, 27, 43, 34, 46, 40] which answer illustrates the list to be sorted after 3 recursive calls to mergesort?</p>
 
         </statement>
 <choices>
@@ -333,7 +332,7 @@ merge_anim_init = function(divid)
     <exercise label="question_sort_6">
         <statement>
 
-            <p>Q-6: Given the following list of numbers: [21, 1, 26, 45, 29, 28, 2, 9, 16, 49, 39, 27, 43, 34, 46, 40] which answer illustrates the first two lists to be merged?</p>
+            <p>Given the following list of numbers: [21, 1, 26, 45, 29, 28, 2, 9, 16, 49, 39, 27, 43, 34, 46, 40] which answer illustrates the first two lists to be merged?</p>
 
         </statement>
 <choices>
@@ -376,6 +375,6 @@ merge_anim_init = function(divid)
 </choices>
 
     </exercise>
-        </note>
+</reading-questions>
     </section>
 
