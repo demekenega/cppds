@@ -34,12 +34,12 @@
             the two symbols do not match, the string is not balanced. Once again, if
             the entire string is processed and nothing is left on the stack, the
             string is correctly balanced.</p>
-        <p>Implementations of this are shown in <xref ref="lst-parcheck2"/>.
+        <p>Implementations of this are shown in <xref ref="lst-parcheck2">ActiveCode 1</xref>.
             The key C++ feature appears in line 16 where we call a helper function, <c>matches</c>, to
             assist with symbol-matching. Each symbol that is removed from the stack
             must be checked to see that it matches the current closing symbol. If a
             mismatch occurs, the Boolean variable <c>balanced</c> is set to <c>false</c>.</p>
-        
+            <p xml:id="lst-parcheck2" names="lst-parcheck2"><term>ActiveCode 1</term></p>
         <TabNode tabname="C++" tabnode_options="{'subchapter': 'BalancedSymbolsGeneralCase', 'chapter': 'LinearBasic', 'basecourse': 'cppds', 'optional': '', 'optclass': '', 'tabname': 'C++'}">
 
     <program xml:id="parcheck2_cpp" interactive="activecode" language="cpp">

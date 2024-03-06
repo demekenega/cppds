@@ -54,8 +54,8 @@
             no opening symbol on the stack to match a closing symbol, the string is
             not balanced properly. At the end of the string, when all symbols have
             been processed, the stack should be empty. The C++ and Python code to implement
-            this algorithm is shown in <xref ref="lst-parcheck1"/>.</p>
-        
+            this algorithm is shown in <xref ref="lst-parcheck1">ActiveCode 1</xref>.</p>
+            <p xml:id="lst-parcheck1" names="lst-parcheck1"><term>ActiveCode 1</term></p>
         <TabNode tabname="C++" tabnode_options="{'subchapter': 'SimpleBalancedParentheses', 'chapter': 'LinearBasic', 'basecourse': 'cppds', 'optional': '', 'optclass': '', 'tabname': 'C++'}">
 
     <program xml:id="parcheck1_cpp" interactive="activecode" language="cpp">
