@@ -34,7 +34,7 @@
             reverse of the order that they were placed. Stacks are fundamentally
             important, as they can be used to reverse the order of items. The order
             of insertion is the reverse of the order of removal.
-            <xref ref="fig-reversal"/> shows the stack object as it was
+            <xref ref="fig-reversalstacks"/> shows the stack object as it was
             created and then again as items are removed. Note the order of the
             objects.</p>
         

@@ -9,11 +9,13 @@
             type such as a stack is the creation of a new class. The stack
             operations are implemented as methods. However, the STL already has a well
             written implementation of the Stack class.</p>
-        <p>The following stack implementation (<xref ref="lst-stackcode1"/>) assumes that
+        <p>The following stack implementation (<xref ref="lst-stackcode1">ActiveCode 1</xref>) assumes that
             the end of the array will hold the top element of the stack. As the stack
             grows (as <c>push</c> operations occur), new items will be added on the end
             of the array. <c>pop</c> operations will manipulate that same end.</p>
         
+            <p xml:id="lst-stackcode1" names="lst-stackcode1"><term>ActiveCode 1</term></p>
+
         <TabNode tabname="C++" tabnode_options="{'subchapter': 'ImplementingaStackCpp', 'chapter': 'LinearBasic', 'basecourse': 'cppds', 'optional': '', 'optclass': '', 'tabname': 'C++'}">
 
     <program xml:id="stack_1ac_cpp" interactive="activecode" language="cpp">
