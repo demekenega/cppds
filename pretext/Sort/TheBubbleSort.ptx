@@ -23,7 +23,7 @@
             <m>n-2</m> pairs. Since each pass places the next largest value in
             place, the total number of passes necessary will be <m>n-1</m>. After
             completing the <m>n-1</m> passes, the smallest item must be in the
-            correct position with no further processing required. <xref ref="lst-bubble-cpp"/>
+            correct position with no further processing required. <xref ref="lst-bubble-cpp">ActiveCode 1</xref>
             shows the complete <c>bubbleSort</c> function. It takes the array as a
             parameter, and modifies it by swapping items as necessary.</p>
         <p>Typically, swapping two elements in an array requires a temporary storage location (an
@@ -33,7 +33,7 @@ alist[i] = alist[j];
 alist[j] = temp;</pre>
         <p>will exchange the <title_reference>ith</title_reference> and <title_reference>jth</title_reference> items in the array. Without the
             temporary storage, one of the values would be overwritten.</p>
-        <p>Lines 5-7 in <xref ref="lst-bubble-cpp"/> perform the exchange of the <m>i</m> and
+        <p>Lines 5-7 in <xref ref="lst-bubble-cpp">ActiveCode 1</xref> perform the exchange of the <m>i</m> and
             <m>(i+1)th</m> items using the three&#8211;step procedure described
             earlier. Note that we could also have used the simultaneous assignment
             to swap the items.</p>
@@ -49,6 +49,8 @@ alist[j] = temp;</pre>
 
         <p>The following activecode example shows the complete <c>bubbleSort</c> function working on the array
             shown above.</p>
+            <p xml:id="lst-bubble-cpp" names="lst-bubble-cpp"><term>ActiveCode 1</term></p>
+
         <TabNode tabname="C++" tabnode_options="{'subchapter': 'TheBubbleSort', 'chapter': 'Sort', 'basecourse': 'cppds', 'optional': '', 'optclass': '', 'tabname': 'C++'}">
 
     <program xml:id="lst_bubble_cpp" interactive="activecode" language="cpp">
@@ -194,7 +196,7 @@ bubble_anim_init = function(divid)
             comparison will cause an exchange. On average, we exchange half of the
             time.</p>
         
-        <table xml:id="sort_id3"><tabular>
+        <table xml:id="sort_tbl-bubbleanalysis"><tabular>
             <title><term>Table 1: Comparisons for Each Pass of Bubble Sort</term></title>
             
                 
@@ -263,8 +265,11 @@ bubble_anim_init = function(divid)
             early if it finds that the array has become sorted. This means that for
             arrays that require just a few passes, a bubble sort may have an
             advantage in that it will recognize the sorted array and stop.
-            <xref ref="lst-shortbubbles-cpp"/> shows this modification, which is often referred
+            <xref ref="lst-shortbubbles-cpp">ActiveCode 2 </xref> shows this modification, which is often referred
             to as the <term>short bubble</term>.</p>
+
+            <p xml:id="lst-shortbubbles-cpp" names="lst-shortbubbles-cpp"><term>ActiveCode 2</term></p>
+
         <TabNode tabname="C++" tabnode_options="{'subchapter': 'TheBubbleSort', 'chapter': 'Sort', 'basecourse': 'cppds', 'optional': '', 'optclass': '', 'tabname': 'C++'}">
 
     <program xml:id="lst_shortbubbles_cpp" interactive="activecode" language="cpp">
